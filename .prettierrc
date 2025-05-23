@@ -16,5 +16,5 @@
     "prettier-plugin-tailwindcss"
   ],
   "organizeImportsSkipDestructiveCodeActions": true,
-  "tailwindConfig": "./tailwind.config.ts"
+  "tailwindStylesheet": "./src/app/globals.css"
 }

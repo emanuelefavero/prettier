@@ -16,7 +16,7 @@ curl -o .prettierrc https://raw.githubusercontent.com/emanuelefavero/prettier/ma
 npm i -D prettier prettier-plugin-organize-imports prettier-plugin-tailwindcss
 ```
 
-- Adjust `./tailwind.config.ts` to your Tailwind config file extension (e.g. `.js`)
+- Adjust `./src/app/globals.css` to your CSS file where you import TailwindCSS: `@import 'tailwindcss'`;
 
 > Note: You can use the `Prettier - Code formatter` extension in Visual Studio Code to format your code using Prettier
 >
@@ -43,7 +43,7 @@ npm i -D prettier prettier-plugin-organize-imports prettier-plugin-tailwindcss
     "prettier-plugin-tailwindcss"
   ],
   "organizeImportsSkipDestructiveCodeActions": true,
-  "tailwindConfig": "./tailwind.config.ts"
+  "tailwindStylesheet": "./src/app/globals.css"
 }
 ```
 
@@ -58,7 +58,7 @@ As you can see the settings are divided in 3 (*separated by spaces since json do
 - [prettier-plugin-organize-imports](https://www.npmjs.com/package/prettier-plugin-organize-imports) - This is a plugin that allows you to auto organise the code imports on save. Add "organizeImportsSkipDestructiveCodeActions": true, if you want to prevent the plugin from removing unused imports
 - [prettier-plugin-tailwindcss](https://www.npmjs.com/package/prettier-plugin-tailwindcss/v/0.0.0-insiders.d539a72) - This plugin automatically sorts the tailwind classes in your code. It needs to have this prettier setting: "tailwindConfig": "./tailwind.config.ts"
 
-> Note: Adjust the `tailwindConfig` setting to your Tailwind config file extension (e.g. `.js`)
+> Note: Adjust the `tailwindStylesheet` setting to your CSS file where you import TailwindCSS: `@import 'tailwindcss'`;
 
 ## License
 
